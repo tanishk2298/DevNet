@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <title>DevNet - a developers' social network</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary nav-profile fixed-top">
+            <a class="navbar-brand" href="posts.html"><i class="fas fa-code"></i>&nbsp;DevNet</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="posts.html">
+                            <p>Home&nbsp;<i class="fas fa-home"></i></p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profiles.html">
+                            <p>Connections&nbsp;<i class="fas fa-user-plus"></i></p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">
+                            <p>Profile&nbsp;<i class="fas fa-user-circle"></i></p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">
+                            <p>Logout&nbsp;<i class="fas fa-sign-out-alt"></i></p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="row dash posts-dash home">
+            <div class="col-md-12">
+                <div class="col-md-12">
+                    <div class="dash-buttons">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <button onclick="location.href='posts.html'" class="btn btn-default dash-edit go-back back-post" type="submit"><i class="fas fa-chevron-left"></i>&nbsp;Back to home</button>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="posts">
+                        <div class="post bg-white rounded">
+                          <div>
+                            <a href="profile.html" class="profile-name">
+                              <img
+                                class="round-img profile-img"
+                                src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200"
+                                alt=""
+                              />
+                              <h5>John Doe</h5>
+                            </a>
+                          </div>
+                          <div>
+                            <p class="my-1">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                              possimus corporis sunt necessitatibus! Minus nesciunt soluta
+                              suscipit nobis. Amet accusamus distinctio cupiditate blanditiis
+                              dolor? Illo perferendis eveniet cum cupiditate aliquam?
+                            </p>
+                          </div>
+                          <form class="create-post comment">
+                            <div class="form-group">
+                                <div>
+                                    <textarea class="form-control form-control-lg font-weight-light"
+                                    placeholder="Leave a comment" name="text" rows="2"
+                                    cols="30"></textarea></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <input class="btn btn-default post-btn go-back" type="submit" value="Post"></input>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        </div>
+                        <div class="post bg-white rounded">
+                            <div>
+                              <a href="profile.html" class="profile-name">
+                                <img
+                                  class="round-img profile-img"
+                                  src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200"
+                                  alt=""
+                                />
+                                <h5>John Doe</h5>
+                              </a>
+                            </div>
+                            <div>
+                              <p class="my-1">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                                possimus corporis sunt necessitatibus! Minus nesciunt soluta
+                                suscipit nobis. Amet accusamus distinctio cupiditate blanditiis
+                                dolor? Illo perferendis eveniet cum cupiditate aliquam?
+                              </p>
+                              <p class="post-date">
+                                Posted on 04/16/2019
+                            </p>
+                        </div>
+                    </div>
+                    <div class="post bg-white rounded">
+                        <div>
+                          <a href="profile.html" class="profile-name">
+                            <img
+                              class="round-img profile-img"
+                              src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200"
+                              alt=""
+                            />
+                            <h5>John Doe</h5>
+                          </a>
+                        </div>
+                        <div>
+                          <p class="my-1">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                            possimus corporis sunt necessitatibus! Minus nesciunt soluta
+                            suscipit nobis. Amet accusamus distinctio cupiditate blanditiis
+                            dolor? Illo perferendis eveniet cum cupiditate aliquam?
+                          </p>
+                          <p class="post-date">
+                            Posted on 04/16/2019
+                        </p>
+                        <button type="button" class="del">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

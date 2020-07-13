@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <title>DevNet - a developers' social network</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary nav-profile">
+			<a class="navbar-brand nav-index" href="posts.html"><i class="fas fa-code"></i>&nbsp;DevNet</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+				<ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="profiles.html"><p>Add Connections&nbsp;<i class="fas fa-user-plus"></i></p></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="posts.html"><p>Home&nbsp;<i class="fas fa-home"></i></p></a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" href="dashboard.html"><p>Dashboard &nbsp;<i class="fas fa-user"></i></p></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="login.html"><p>Logout &nbsp;<i class="fas fa-sign-out-alt"></i></p></a>
+          </li>
+				</ul>
+			</div>
+        </nav>
+    </div>
+    <div class="container">
+        <form class="profile">
+            <h2 class="create-profile">
+                Create Your Profile
+              </h2>
+              <small class="form-text">* = required</small>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" class="form-control"placeholder="Company">
+                <small class="form-text">Give us an idea of where you are at in your career</small>
+              </div>
+              <div class="form-group col-md-6">
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option value="0">* Select Professional Status</option>
+                    <option value="Developer">Developer</option>
+                    <option value="Junior Developer">Junior Developer</option>
+                    <option value="Senior Developer">Senior Developer</option>
+                    <option value="Manager">Manager</option>
+                    <option value="Analyst">Analyst</option>
+                    <option value="Student">Student</option>
+                    <option value="Instructor">Instructor</option>
+                    <option value="Intern">Intern</option>
+                    <option value="Other">Other</option>
+                  </select>
+                  <small class="form-text">Could be your own company or one you work for</small>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control"placeholder="Website">
+              <small class="form-text">Could be your own or a company website</small>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control"placeholder="Location">
+              <small class="form-text">City & state suggested (eg. London, UK)</small>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control"placeholder="*Skills">
+                <small class="form-text">Please use comma separated values (eg. JavaScript, ReactJS, SQL, Machine learning)</small>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control"placeholder="Github username">
+                <small class="form-text">Your latest github repositories will be displayed on your profile</small>
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="A short bio of yourself..."></textarea>
+            </div>
+            <div class="form-group social-input">
+                <i class="fab fa-twitter fa-2x"></i>
+                <input type="text" class="form-control soc" placeholder="Twitter URL" name="twitter" />
+              </div>
+      
+              <div class="form-group social-input">
+                <i class="fab fa-facebook fa-2x"></i>
+                <input type="text" class="form-control" placeholder="Facebook URL" name="facebook" />
+              </div>
+      
+              <div class="form-group social-input">
+                <i class="fab fa-youtube fa-2x"></i>
+                <input type="text" class="form-control" placeholder="YouTube URL" name="youtube" />
+              </div>
+      
+              <div class="form-group social-input">
+                <i class="fab fa-linkedin fa-2x"></i>
+                <input type="text" class="form-control" placeholder="Linkedin URL" name="linkedin" />
+              </div>
+      
+              <div class="form-group social-input">
+                <i class="fab fa-instagram fa-2x"></i>
+                <input type="text" class="form-control" placeholder="Instagram URL" name="instagram" />
+              </div>
+              <div class="row">
+                  <div class="col-4">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+                  <div class="col-4">
+                    <button onclick="location.href='dashboard.html'" class="btn btn-default go-back" type="submit">Go Back</button>
+                  </div>
+                  <div class="col-9">
+
+                  </div>
+              </div>
+            </div>
+          </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
+
