@@ -16,8 +16,8 @@ const Profiles = ({getProfiles, profile:{profiles,loading}}) => {
         <div className="container-fluid">
             <div className="row dash posts-dash home profiles">
                 <div className="col-md-12">
-                    <h2 classNameName="create-profile profiles-heading"><i className="fab fa-connectdevelop text-primary"></i>&nbsp;Developers</h2>
-                    <p classNameName="hide-sm profiles-heading">Connect with developers across the globe&nbsp;<i className="fas fa-globe-americas text-primary"></i></p>
+                    <h2 className="create-profile profiles-heading"><i className="fab fa-connectdevelop text-primary"></i>&nbsp;Developers</h2>
+                    <p className="hide-sm profiles-heading">Connect with developers across the globe&nbsp;<i className="fas fa-globe-americas text-primary"></i></p>
                     <div className="col-lg-12">
                         <div className="row">
                             {profiles.length>0 ? (

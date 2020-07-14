@@ -66,7 +66,7 @@ const EditProfile = ({profile: {profile, loading}, createProfile , getCurrentPro
     <div className="container mt-2">
         <form className="profile" onSubmit= {e => onSubmit(e)}>
             <h2 className="create-profile">
-            <i class="fas fa-user-circle text-primary"></i>&nbsp;Create Profile
+            <i className="fas fa-user-circle text-primary"></i>&nbsp;Create Profile
               </h2>
               <small className="form-text">* = required</small>
             <div className="form-row">
@@ -139,7 +139,7 @@ const EditProfile = ({profile: {profile, loading}, createProfile , getCurrentPro
                 </div>
                 <div className="col-sm-3">
                     <Link to="/dashboard">
-                    <button onclick="location.href='dashboard.html'" className="btn btn-default dash-edit" type="submit">Go Back</button>
+                        <button className="btn btn-default dash-edit" type="submit">Go Back</button>
                     </Link>
                 </div>
             </div>

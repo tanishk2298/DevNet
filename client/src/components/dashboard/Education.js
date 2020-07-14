@@ -17,22 +17,22 @@ const Education = ({education, deleteEducation}) => {
                 }
             </td>
             <td>
-                <button class="btn btn-danger del" onClick={() => deleteEducation(edu._id)}>
-                    <i class="fas fa-trash"></i>
+                <button className="btn btn-danger del" onClick={() => deleteEducation(edu._id)}>
+                    <i className="fas fa-trash"></i>
                 </button>
             </td>
         </tr>
     ))
 
     return (
-            <div class="dash-buttons mt-4">
-            <h2 class="edit-heading create-profile"><i class="fas fa-graduation-cap text-primary"></i>&nbsp;Education</h2>
-                <table class="table">
+            <div className="dash-buttons mt-4">
+            <h2 className="edit-heading create-profile"><i className="fas fa-graduation-cap text-primary"></i>&nbsp;Education</h2>
+                <table className="table">
                     <thead>
                       <tr className="bg-light">
                         <th>Institute</th>
-                        <th class="hide-sm">Degree</th>
-                        <th class="hide-sm">Years</th>
+                        <th className="hide-sm">Degree</th>
+                        <th className="hide-sm">Years</th>
                         <th></th>
                       </tr>
                     </thead>

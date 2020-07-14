@@ -25,10 +25,10 @@ const Dashboard = ({getCurrentProfile, deleteAccount, auth:{user}, profile:{prof
                 <Experience experience={profile.experience}/>    
                 <Education education={profile.education}/> 
                 <div>
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <button class="btn btn-danger del delacc mt-3 " onClick={() => deleteAccount()}>
-                                <i class="fas fa-user-minus"></i>
+                    <div className="row">
+                        <div className="col-lg-3">
+                            <button className="btn btn-danger del delacc mt-3 " onClick={() => deleteAccount()}>
+                                <i className="fas fa-user-minus"></i>
                                     &nbsp;Delete Account
                             </button>
                         </div>
@@ -47,7 +47,7 @@ const Dashboard = ({getCurrentProfile, deleteAccount, auth:{user}, profile:{prof
                         </div>
                         <div className="col-md-3">
                             <Link to="/add-experience">
-                                <button className="btn btn-default dash-edit" type="submit"><i class="fas fa-briefcase text-primary"></i>&nbsp;Add Experience</button>
+                                <button className="btn btn-default dash-edit" type="submit"><i className="fas fa-briefcase text-primary"></i>&nbsp;Add Experience</button>
                             </Link>
                         </div>
                         <div className="col-md-3">

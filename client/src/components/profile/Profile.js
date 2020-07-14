@@ -19,7 +19,7 @@ const Profile = ({
     }, [getProfileById, match.params.id])
     return profile ? (
         <Fragment>
-          <div classNameName="container-fluid">
+          <div className="container-fluid">
             <ProfileTop profile={profile} />
             <ProfileAbout profile={profile} />
             <div className="container-fluid skill-container">

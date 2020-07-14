@@ -17,7 +17,7 @@ export const Navbar = ({auth: {isAuthenticated, loading}, logout}) => {
 			<div className="collapse navbar-collapse" id="navbarTogglerDemo01">
 				<ul className="navbar-nav ml-auto">
 					<li className="nav-item">
-						<Link className="nav-link text-primary" to="/profiles"><p><i class="fas fa-user-plus"></i>{' '}Add Connections</p></Link>
+						<Link className="nav-link text-primary" to="/profiles"><p><i className="fas fa-user-plus"></i>{' '}Add Connections</p></Link>
 					</li>
 					<li className="nav-item">
 						<Link className="nav-link text-primary" to="/dashboard"><p>Dashboard</p></Link>
@@ -54,7 +54,7 @@ export const Navbar = ({auth: {isAuthenticated, loading}, logout}) => {
 	)
 	
     return (
-	<div class="container-fluid">
+	<div className="container-fluid">
 
 		{ !loading && (<Fragment>{isAuthenticated ? authLinks : guestLinks}</Fragment>)}
 

@@ -56,7 +56,7 @@ const Register = ({setAlert, register, isAuthenticated}) => {
                         </div>
                         <div className="input-div one">
                             <div className="i">
-                                <i class="fas fa-at"></i>
+                                <i className="fas fa-at"></i>
                             </div>
                             <div className="div">
                                     <input type="email" className="input" placeholder="Email" name="email" value={email} onChange={e => onChange(e)} />

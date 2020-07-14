@@ -17,22 +17,22 @@ const Experience = ({experience, deleteExperience}) => {
                 }
             </td>
             <td>
-                <button class="btn btn-danger del" onClick={() => deleteExperience(exp._id)}>
-                    <i class="fas fa-trash"></i>
+                <button className="btn btn-danger del" onClick={() => deleteExperience(exp._id)}>
+                    <i className="fas fa-trash"></i>
                 </button>
             </td>
         </tr>
     ))
 
     return (
-            <div class="dash-buttons mt-5">
-            <h2 class="edit-heading create-profile"><i class="fab fa-black-tie text-primary"></i>&nbsp;Experience</h2>
-                <table class="table">
+            <div className="dash-buttons mt-5">
+            <h2 className="edit-heading create-profile"><i className="fab fa-black-tie text-primary"></i>&nbsp;Experience</h2>
+                <table className="table">
                     <thead>
                       <tr>
                         <th>Company</th>
-                        <th class="hide-sm">Title</th>
-                        <th class="hide-sm">Years</th>
+                        <th className="hide-sm">Title</th>
+                        <th className="hide-sm">Years</th>
                         <th></th>
                       </tr>
                     </thead>

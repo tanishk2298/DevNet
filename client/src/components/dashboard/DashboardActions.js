@@ -12,7 +12,7 @@ export const DashboardActions = () => {
                 </div>
                 <div className="col-md-3">
                     <Link to="/add-experience">
-                        <button className="btn btn-default dash-edit" type="submit"><i class="fas fa-briefcase text-primary"></i>&nbsp;Add Experience</button>
+                        <button className="btn btn-default dash-edit" type="submit"><i className="fas fa-briefcase text-primary"></i>&nbsp;Add Experience</button>
                     </Link>
                 </div>
                 <div className="col-md-3">
