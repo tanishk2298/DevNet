@@ -6,7 +6,7 @@ const ProfileEducation = ({education:{school,degree,fieldofstudy,to,from,descrip
     return (
         <div>
             <h4>{school}</h4>
-            <p class='lead'><Moment format="DD/MM/YYYY">{from}</Moment> - {!to ? 'Current' : <Moment format='DD/MM/YYYY'>{to}</Moment>}</p>
+            <p className='lead'><Moment format="DD/MM/YYYY">{from}</Moment> - {!to ? 'Current' : <Moment format='DD/MM/YYYY'>{to}</Moment>}</p>
             <p><strong>Degree: </strong><span>{degree}</span></p>
             <p><strong>Field of study: </strong><span>{fieldofstudy}</span></p>
             {description && <p>
@@ -17,7 +17,7 @@ const ProfileEducation = ({education:{school,degree,fieldofstudy,to,from,descrip
 }
 
 ProfileEducation.propTypes = {
-    education:PropTypes.array.isRequired
+    education:PropTypes.object.isRequired
 }
 
 export default ProfileEducation

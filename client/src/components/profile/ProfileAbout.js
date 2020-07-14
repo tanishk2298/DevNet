@@ -9,24 +9,24 @@ const ProfileAbout = ({
     }
 }) => {
     return (
-        <div class="container-fluid skill-container">
-            {bio && <div class="row">
-                <div class="col-md-12">
-                    <div class="card">
-                        <div class="card-body" style>
-                            <h3 class="name">{name.trim().split(' ')[0]}'s Bio</h3>
+        <div className="container-fluid skill-container">
+            {bio && <div className="row">
+                <div className="col-md-12">
+                    <div className="card">
+                        <div className="card-body">
+                            <h3 className="name">{name.trim().split(' ')[0]}'s Bio</h3>
                             <p>{bio}</p> 
                         </div>
                     </div>
                 </div>
             </div>
             }
-            <div class="row">
-                <div class="col-md-12 mt-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3 class="name">Skill Set</h3>
-                            <p class="skill-set">
+            <div className="row">
+                <div className="col-md-12 mt-3">
+                    <div className="card">
+                        <div className="card-body">
+                            <h3 className="name">Skill Set</h3>
+                            <p className="skill-set">
                                 {skills.map((skill, index) => (
                                     <Fragment key={index}>
                                     <span className="name"> | </span>{skill}

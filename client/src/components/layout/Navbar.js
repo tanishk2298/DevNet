@@ -10,9 +10,9 @@ export const Navbar = ({auth: {isAuthenticated, loading}, logout}) => {
 		<Fragment>
 		<nav className="navbar navbar-expand-lg bg-light fixed-top nav-profile">
 			<Link to="/" className="navbar-brand nav-index text-primary"><i className="fas fa-code"></i>&nbsp;DevNet<i></i></Link>
-			<button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+			<button className="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
                 aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span className="navbar-toggler-icon"></span>
             </button>
 			<div className="collapse navbar-collapse" id="navbarTogglerDemo01">
 				<ul className="navbar-nav ml-auto">
@@ -35,9 +35,9 @@ export const Navbar = ({auth: {isAuthenticated, loading}, logout}) => {
 		<Fragment>
 			<nav className="navbar navbar-expand-lg navbar-dark nav-fonts">
 			<Link to="/" className="navbar-brand nav-index mt-1"><i className="fas fa-code"></i>&nbsp;DevNet<i><p>a developers' social network</p></i></Link>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+			<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
                 aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span className="navbar-toggler-icon"></span>
             </button>
 			<div className="collapse navbar-collapse" id="navbarTogglerDemo01">
 			<ul className="navbar-nav ml-auto">
