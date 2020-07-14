@@ -60,8 +60,11 @@ router.post("/", [auth,
         if(bio) profileFields.bio = bio;
         if(status) profileFields.status = status;
         if(githubusername) profileFields.githubusername = githubusername;
-        if(skills){
-            profileFields.skills = skills.split(',').map(skill => skill.trim());
+        if (skills) {
+            try{profileFields.skills = skills.split(',').map(skill => skill.trim());}
+            catch(err){
+                console.error(err.message);
+                res.status(500).send('Server Error');}
         }
         
         profileFields.social = {};
@@ -234,22 +237,27 @@ router.put('/education',
             res.json(profile);
         } catch (err) {
             console.error(err.message)
-            res.status(500).send('Server Error')
+            return res.status(500).send('Server Error')
         }
     }
 )
 
 router.delete('/education/:edu_id', auth, async(req, res) => {
     try {
-        const profile = await Profile.findOne({user : req.user.id});
-        const removeIndex = profile.education.map(item=>item.id).indexOf(req.params.edu_id);
-        profile.education.splice(removeIndex, 1);
-        await profile.save();
-        res.json(profile);
-    } catch (err) {
-        console.error(err.message);
-        res.status(500).send('Server Error');
-    }
+        const foundProfile = await Profile.findOne({ user: req.user.id });
+        const eduIds = foundProfile.education.map(edu => edu._id.toString());
+        const removeIndex = eduIds.indexOf(req.params.edu_id);
+        if (removeIndex === -1) {
+            return res.status(500).json({ msg: "Server error" });
+        } else { 
+            foundProfile.education.splice(removeIndex,1);
+            await foundProfile.save();
+            res.json({ msg: 'Education Deleted'})
+        }
+    } catch (error) {
+        console.error(error);
+        return res.status(500).json({ msg: "Server error" });
+    }   
 })
 
 router.get("/github/:username", (req, res) => {

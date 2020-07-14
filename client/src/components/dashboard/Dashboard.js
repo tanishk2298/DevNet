@@ -17,7 +17,7 @@ const Dashboard = ({getCurrentProfile, deleteAccount, auth:{user}, profile:{prof
         <div className="container">
             <div className = "dash">
                 <h3 className="create-profile">
-                    <i className="fas fa-chart-line text-primary"></i> &nbsp;<span className='text-primary'>{user && user.name}'s</span> dashboard
+                    <i className="fas fa-chart-line text-primary"></i> &nbsp;<span className='text-primary'>{user && user.name.trim().split(' ')[0]}'s</span> dashboard
                 </h3>     
         {profile !== null ? (
             <Fragment>

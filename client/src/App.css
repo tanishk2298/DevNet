@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 :root{
 	--primary-color : #007BFF;
 }
@@ -29,7 +29,7 @@ body {
 
 h5{
 	padding-top: 0.8rem;
-	font-size: 1rem !important;
+	font-size: 1.1rem !important;
 }
 
 .form-profile .soc {
@@ -382,7 +382,11 @@ form .social-input i.fa-linkedin {
 }
 
 form .lead p {
-	font-size: 2.0rem;
+	font-size: 1.0rem;
+}
+.lead {
+	font-size: 0.9rem;
+	font-weight: 300 !important;
 }
 
 .go-back {
@@ -607,6 +611,7 @@ h5.post-username {
 	width: 18rem; 
 	margin: 1rem;
 	padding: 1rem;
+	background: #FDFDFD;
 	transition: transform .4s ease;
 }
 .profile-card:hover{
@@ -676,6 +681,7 @@ h5.post-username {
 .exp-edu{
 	text-align: left;
 	font-weight: 350;
+	background: #FDFDFD;
 }
 
 .exp-edu > div {

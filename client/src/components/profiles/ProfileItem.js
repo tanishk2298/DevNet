@@ -14,23 +14,23 @@ const ProfileItem = ({
     return (
             <div class="col-lg-4 col-md-6 col-sm-12 dash-buttons">
                 <div class="card profile-card">
-                    <a href="profile.html" class="profile-name">
+                    <Link to={`/profile/${_id}`} className="profile-name">
                         <img class="rounded-circle"
                             src={avatar}
                             alt="Profile"
                         />
-                        <h4 className="text-primary mt-3">{name}</h4>
-                    </a>  
+                        <h5 className="text-primary mt-3">{name}</h5>
+                    </Link>  
                     <div class="card-body">
-                        <p><i class="fas fa-briefcase"></i>&nbsp;{status}{company && <span> at {company}</span>}</p>
-                        <p><i class="fas fa-map-marker-alt"></i>&nbsp;{location && <span>{location}</span>}</p>
-                        <h5><i class="fas fa-code"></i>&nbsp;Skills</h5>
+                        <p><i class="fas fa-briefcase text-info"></i>&nbsp;&nbsp;{status}{company && <span> at {company}</span>}</p>
+                        <p><i class="fas fa-map-marker-alt text-danger"></i>&nbsp;&nbsp;&nbsp;{location && <span>{location}</span>}</p>
+                        <p><i class="fas fa-code text-success"></i>&nbsp;Skills</p>
                         <span>
-                            {skills.slice(0,6).map((skill, index) =>(
-                            <span key={index} className="mr-2">
-                                {skill} 
+                            {skills.slice(0,5).map((skill, index) =>(
+                            <span key={index}>
+                                {`| ${skill} `} 
                             </span>
-                            ))}
+                            ))} |
                         </span>
                     </div>
                     <Link to={`/profile/${_id}`}>
