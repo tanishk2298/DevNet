@@ -29,10 +29,10 @@ const ProfileAbout = ({
                             <p className="skill-set">
                                 {skills.map((skill, index) => (
                                     <Fragment key={index}>
-                                    <span className="name"> | </span>{skill}
+                                    <span className="name">|</span>{skill}
                                     </Fragment>
                                 ))}
-                                <span className="name"> | </span>
+                                <span className="name hide-sm"> | </span>
                             </p> 
                         </div>
                     </div>
