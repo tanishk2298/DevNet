@@ -17,6 +17,9 @@ export const Navbar = ({auth: {isAuthenticated, loading}, logout}) => {
 			<div className="collapse navbar-collapse" id="navbarTogglerDemo01">
 				<ul className="navbar-nav ml-auto">
 					<li className="nav-item">
+						<Link className="nav-link text-primary" to="/posts"><p><i className="fas fa-home"></i>{' '}Home</p></Link>
+					</li>
+					<li className="nav-item">
 						<Link className="nav-link text-primary" to="/profiles"><p><i className="fas fa-user-plus"></i>{' '}Add Connections</p></Link>
 					</li>
 					<li className="nav-item">

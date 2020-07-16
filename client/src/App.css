@@ -390,9 +390,9 @@ form .lead p {
 }
 
 .go-back {
-	border: 2px solid #0099FF;
-	background-color: #eee;
-	color: #0099FF;
+	border: 1px solid #0099FF;
+	background-color: #0099FF;
+	color: #eee;
 }
 
 .go-back:hover {
@@ -455,6 +455,12 @@ table th {
 button.post-btn {
 	margin-top: -0.5%;
 	padding-top: -1rem !important;
+}
+
+.post-btn{
+	margin-bottom: -5% !important;
+	margin-top: -5% !important;
+	font-size: 0.9rem !important;
 }
 
 button.del {
@@ -566,6 +572,11 @@ h5.post-username {
 	margin-left: 0.9rem;
 	width: 70% !important;
 	font-size: 0.8rem !important;
+	background-color: transparent !important;
+}
+.back-post:hover{
+	background-color: #007BFF !important;
+	color: #eee !important;
 }
 
 .bg-white{
@@ -595,7 +606,18 @@ h5.post-username {
 }
 
 .comment{
-	width: 520% !important;
+	width: 97% !important;
+	margin-left: 2% !important;
+}
+
+input.cmt-btn{
+	margin-top: 0% !important;
+}
+
+.comment-box{
+	margin-top: -25% !important;
+	margin-left: 16.5% !important;
+	width: 59% !important;
 }
 
 .profile {
@@ -753,6 +775,11 @@ div.github-repos{
 		width: 290px;
 	}
 
+	.home{
+		margin-top: 150px !important;
+		width: 222% !important;
+	}
+
 	.dash {
 		margin-top: 20%;
 		width: 100%;
@@ -791,6 +818,12 @@ div.github-repos{
 	}
 	.home{
 		margin-top: 150px !important;
+		width: 122% !important;
+		margin-left: -10% !important;
+		margin-right: -10% !important;
+	}
+	.post-btn{
+		margin: 0.5% !important;
 	}
 
 	.img {
@@ -873,5 +906,14 @@ div.github-repos{
 	}
 	.profiles-heading{
 		margin-left: 10% !important;
+	}
+	.comment{
+		width: 90% !important;
+		margin-left: 5% !important;
+		margin-right: 5% !important;
+	}
+	
+	input.cmt-btn{
+		margin-top: 10% !important;
 	}
 }
