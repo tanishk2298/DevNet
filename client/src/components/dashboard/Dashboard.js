@@ -37,7 +37,7 @@ const Dashboard = ({getCurrentProfile, deleteAccount, auth:{user}, profile:{prof
             </Fragment>
         ) : (
             <Fragment>
-                <p>Hey <span className="text-primary">{user && user.name}!</span> let's create your profile and connect with developers across the globe.</p>
+                <p className="new">Hey <span className="text-primary">{user && user.name}!</span> let's create your profile and connect with developers across the globe.</p>
                 <div className="dash-buttons">
                     <div className="row">
                         <div className="col-md-3">
