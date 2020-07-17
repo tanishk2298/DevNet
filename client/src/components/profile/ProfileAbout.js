@@ -14,7 +14,7 @@ const ProfileAbout = ({
                 <div className="col-md-12">
                     <div className="card">
                         <div className="card-body profile-details">
-                            <h3 className="name">{name.trim().split(' ')[0]}'s Bio</h3>
+                            <h3 className="name">About</h3>
                             <p>{bio}</p> 
                         </div>
                     </div>

@@ -771,6 +771,9 @@ div.github-repos{
 	margin-left: 3% !important;
 }
 
+.pf-img{
+	width: 90% !important;
+}
 @media screen and (max-width: 1200px) {
 	.container {
 		grid-gap: 5rem;

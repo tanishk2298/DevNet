@@ -2,6 +2,7 @@ import React, {Fragment, useEffect} from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import './App.css';
 import Navbar from "./components/layout/Navbar";
+import NotFound from "./components/layout/NotFound";
 import Landing from "./components/layout/Landing"
 import Register from "./components/auth/Register"
 import Alert from "./components/layout/alert"
@@ -35,9 +36,9 @@ const App = () => {
     <Router>
       <Fragment>
         <Navbar/>
-        <Route exact path="/" component={Landing}/>
           <Alert/>
           <Switch>
+            <Route exact path="/" component={Landing}/>
             <Route exact path="/register" component={Register}/>
             <PrivateRoute exact path="/profile/:id" component={Profile}/>
             <PrivateRoute exact path="/profiles" component={Profiles}/>
@@ -48,6 +49,7 @@ const App = () => {
             <PrivateRoute exact path="/add-education" component={AddEducation}/>
             <PrivateRoute exact path="/posts" component={Posts}/>
             <PrivateRoute exact path="/posts/:id" component={Post}/>
+            <Route component={NotFound}/>
           </Switch>
       </Fragment>
     </Router>

@@ -15,7 +15,7 @@ const ProfileItem = ({
             <div className="col-lg-4 col-md-6 col-sm-12 dash-buttons">
                 <div className="card profile-card">
                     <Link to={`/profile/${_id}`} className="profile-name">
-                        <img className="rounded-circle"
+                        <img className="rounded-circle pf-img"
                             src={avatar}
                             alt="Profile"
                         />

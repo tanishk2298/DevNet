@@ -22,17 +22,17 @@ export const Navbar = ({auth: {isAuthenticated, loading, user}, logout, profile}
 						<Link className="nav-link text-primary" to="/posts"><p><i className="fas fa-home"></i> </p></Link>
 					</li>
 					<li className="nav-item">
-						<Link className="nav-link text-primary" to="/profiles"><p><i className="fas fa-user-plus"></i></p></Link>
+						<Link className="nav-link text-success" to="/profiles"><p><i className="fas fa-user-plus"></i></p></Link>
 					</li>
 					<li className="nav-item">
-						<Link className="nav-link text-primary" to="/dashboard"><p><i className="fas fa-cog"></i></p></Link>
+						<Link className="nav-link text-warning" to="/dashboard"><p><i className="fas fa-cog"></i></p></Link>
 					</li>
 					{isCurrentUser && (
 					<li className="nav-item">
-						<Link className="nav-link text-primary" to={`/profile/${profile.user._id}`}><p><i className="fas fa-user-circle"></i><span className='text-primary'>{' '}{user && user.name.trim().split(' ')[0]}</span></p></Link>
+						<Link className="nav-link text-primary" to={`/profile/${profile.user._id}`}><p><i className="fas fa-user-circle"></i><span>{' '}{user && user.name.trim().split(' ')[0]}</span></p></Link>
 					</li>)}
 					<li className="nav-item">
-						<a onClick={logout} className="nav-link text-primary"><p><i className="fas fa-sign-out-alt"></i></p></a>
+						<a onClick={logout} className="nav-link text-danger"><p><i className="fas fa-sign-out-alt"></i></p></a>
 					</li>
 				</ul>
 			</div>
