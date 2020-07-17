@@ -30,13 +30,13 @@ const Experience = ({experience, deleteExperience}) => {
                 <table className="table">
                     <thead>
                       <tr>
-                        <th>Company</th>
-                        <th className="hide-sm">Title</th>
-                        <th className="hide-sm">Years</th>
+                        <th className="new">Company</th>
+                        <th className="hide-sm new">Title</th>
+                        <th className="hide-sm new">Years</th>
                         <th></th>
                       </tr>
                     </thead>
-                    <tbody>{experiences}</tbody>
+                    <tbody className="new">{experiences}</tbody>
                 </table>
             </div>
     )

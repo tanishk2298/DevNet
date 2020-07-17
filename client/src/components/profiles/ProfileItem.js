@@ -22,16 +22,16 @@ const ProfileItem = ({
                         <h5 className="text-primary mt-3">{name}</h5>
                     </Link>  
                     <div className="card-body">
-                        <p><i className="fas fa-briefcase text-info"></i>&nbsp;&nbsp;{status}{company && <span> at {company}</span>}</p>
-                        <p><i className="fas fa-map-marker-alt text-danger"></i>&nbsp;&nbsp;&nbsp;{location && <span>{location}</span>}</p>
-                        <p><i className="fas fa-code text-success"></i>&nbsp;Skills</p>
-                        <span>
+                        <p><i className="fas fa-briefcase text-info new"></i>&nbsp;&nbsp;{status}{company && <span> at {company}</span>}</p>
+                        <p><i className="fas fa-map-marker-alt text-danger new"></i>&nbsp;&nbsp;&nbsp;{location && <span>{location}</span>}</p>
+                        <p><i className="fas fa-code text-success new"></i>&nbsp;Skills</p>
+                        <p className="new">
                             {skills.slice(0,5).map((skill, index) =>(
-                            <span key={index}>
+                            <span key={index} className="new">
                                 {`| ${skill} `} 
                             </span>
                             ))} |
-                        </span>
+                        </p>
                     </div>
                     <Link to={`/profile/${_id}`}>
                         <button className="btn btn-default dash-edit view-profile" type="submit">Visit Profile</button>

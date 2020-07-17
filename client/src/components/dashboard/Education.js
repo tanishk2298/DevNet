@@ -30,13 +30,13 @@ const Education = ({education, deleteEducation}) => {
                 <table className="table">
                     <thead>
                       <tr className="bg-light">
-                        <th>Institute</th>
-                        <th className="hide-sm">Degree</th>
-                        <th className="hide-sm">Years</th>
+                        <th className="new">Institute</th>
+                        <th className="hide-sm new">Degree</th>
+                        <th className="hide-sm new">Years</th>
                         <th></th>
                       </tr>
                     </thead>
-                    <tbody>{educations}</tbody>
+                    <tbody className="new">{educations}</tbody>
                 </table>
             </div>
     )
