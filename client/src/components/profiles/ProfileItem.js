@@ -22,9 +22,9 @@ const ProfileItem = ({
                         <h5 className="text-primary mt-3">{name}</h5>
                     </Link>  
                     <div className="card-body">
-                        <p><i className="fas fa-briefcase text-info new"></i>&nbsp;&nbsp;<span ClassName="new">{status}{company && <span> at {company}</span>}</span></p>
-                        <p><i className="fas fa-map-marker-alt text-danger new"></i>&nbsp;&nbsp;&nbsp;<span ClassName="new">{location && <span>{location}</span>}</span></p>
-                        <p><i className="fas fa-code text-success new"></i>&nbsp;<span ClassName="new">Skills</span></p>
+                        <p><i className="fas fa-briefcase text-info new"></i>&nbsp;&nbsp;<span className="new">{status}{company && <span> at {company}</span>}</span></p>
+                        <p><i className="fas fa-map-marker-alt text-danger new"></i>&nbsp;&nbsp;&nbsp;<span className="new">{location && <span>{location}</span>}</span></p>
+                        <p><i className="fas fa-code text-success new"></i>&nbsp;<span className="new">Skills</span></p>
                         <p className="new">
                             {skills.slice(0,5).map((skill, index) =>(
                             <span key={index} className="new">
