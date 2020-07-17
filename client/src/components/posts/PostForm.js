@@ -8,10 +8,10 @@ const PostForm = ({addPost}) => {
     const[text, setText] = useState('')
 
     return (
-        <div class="post-form mb-3">
-                        <div class="card card-info">
-                            <div class="card-body">
-                                <form class="create-post" onSubmit={e=>{
+        <div class="post-form mb-3 ">
+                        <div class="card card-info ">
+                            <div class="card-body profile-details repos">
+                                <form class="create-post " onSubmit={e=>{
                                     e.preventDefault();
                                     addPost({text});
                                     setText('');

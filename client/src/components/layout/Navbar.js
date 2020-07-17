@@ -4,7 +4,7 @@ import {connect} from 'react-redux'
 import PropTypes from 'prop-types'
 import {logout} from '../../actions/auth'
 
-export const Navbar = ({auth: {isAuthenticated, loading}, logout}) => {
+export const Navbar = ({auth: {isAuthenticated, loading}, logout, profile:{profile, id}}) => {
 
 	const authLinks = (
 		<Fragment>
@@ -18,6 +18,9 @@ export const Navbar = ({auth: {isAuthenticated, loading}, logout}) => {
 				<ul className="navbar-nav ml-auto">
 					<li className="nav-item">
 						<Link className="nav-link text-primary" to="/posts"><p><i className="fas fa-home"></i>{' '}Home</p></Link>
+					</li>
+					<li className="nav-item">
+						<Link className="nav-link text-primary" to={`/profile/${profile.id}`}><p><i className="fas fa-user-circle"></i>{' '}Profile</p></Link>
 					</li>
 					<li className="nav-item">
 						<Link className="nav-link text-primary" to="/profiles"><p><i className="fas fa-user-plus"></i>{' '}Add Connections</p></Link>

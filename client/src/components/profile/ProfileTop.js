@@ -27,10 +27,17 @@ const ProfileTop = ({
                 {website && (
                       <div className="col-xs-1">
                         <a href={website} target="_blank" rel="noopener noreferrer">
-                            <i className="fas fa-globe fa-2x"></i>
+                            <i className="fas fa-globe-americas fa-2x"></i>
                           </a>
                       </div>
                 )}
+                {social && social.youtube &&(
+                      <div className="col-xs-1">
+                        <a href={social.youtube} target="_blank" rel="noopener noreferrer">
+                            <i className="fab fa-hackerrank fa-2x"></i>
+                          </a>
+                      </div>
+                )}  
                 {social && social.linkedin && (
                       <div className="col-xs-1">
                         <a href={social.linkedin} target="_blank" rel="noopener noreferrer">
@@ -59,13 +66,7 @@ const ProfileTop = ({
                           </a>
                       </div>
                 )}
-                {social && social.youtube &&(
-                      <div className="col-xs-1">
-                        <a href={social.youtube} target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-youtube fa-2x"></i>
-                          </a>
-                      </div>
-                )}    
+  
                 </div> 
             </div>
         </div>

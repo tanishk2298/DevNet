@@ -19,7 +19,7 @@ const ProfileGithub = ({username,getGithubRepos,repos}) => {
             repos.map(repo =>(
             <div className="row github-repos" key={repo.id}>
                 <div className="col-md-12 mt-3">
-                    <div className="card mb-3">
+                    <div className="card mb-3  repos">
                             <div className="card-body">
                                 <div className="row">
                                     <div className="col-md-8 text-left">

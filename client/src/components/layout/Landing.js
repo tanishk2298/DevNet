@@ -37,7 +37,7 @@ const Landing = ({login, isAuthenticated}) => {
                 <div className="login-content">
                     <form onSubmit={e => onSubmit(e)}>
                         <img src={avatar} alt="avatar"/>
-                        <h2 className="title ">Hey Developer</h2>
+                        <h2 className="title">Hey Developer</h2>
                         <div className="input-div one">
                             <div className="i">
                                 <i className="fas fa-at"></i>

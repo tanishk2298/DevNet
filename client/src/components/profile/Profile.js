@@ -25,7 +25,7 @@ const Profile = ({
             <div className="container-fluid skill-container">
                 <div className="row ">
                   <div className="col-md-6 mt-3">
-                      <div className="card">
+                      <div className="card profile-details">
                           <div className="card-body exp-edu p-4">
                             <h4 className="name"><i className="fas fa-chart-line"></i>&nbsp;Experience</h4>
                             {profile.experience.length > 0 ? (<Fragment>
@@ -37,7 +37,7 @@ const Profile = ({
                       </div>
                   </div>  
                   <div className="col-md-6 mt-3">
-                      <div className="card">
+                      <div className="card profile-details">
                           <div className="card-body exp-edu p-4">
                           <h4 className="name"><i className="fas fa-graduation-cap"></i>&nbsp;Education</h4>
                             {profile.education.length > 0 ? (<Fragment>

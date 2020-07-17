@@ -13,7 +13,7 @@ const ProfileAbout = ({
             {bio && <div className="row">
                 <div className="col-md-12">
                     <div className="card">
-                        <div className="card-body">
+                        <div className="card-body profile-details">
                             <h3 className="name">{name.trim().split(' ')[0]}'s Bio</h3>
                             <p>{bio}</p> 
                         </div>
@@ -24,7 +24,7 @@ const ProfileAbout = ({
             <div className="row">
                 <div className="col-md-12 mt-3">
                     <div className="card">
-                        <div className="card-body">
+                        <div className="card-body profile-details">
                             <h3 className="name">Skill Set</h3>
                             <p className="skill-set">
                                 {skills.map((skill, index) => (

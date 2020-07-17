@@ -13,7 +13,7 @@ const Profiles = ({getProfiles, profile:{profiles,loading}}) => {
     return (<Fragment>
         {
         loading ? <Spinner/> :
-        <div className="container-fluid">
+        <div className="container-fluid pfs">
             <div className="row dash posts-dash home profiles">
                 <div className="col-md-12">
                     <h2 className="create-profile profiles-heading"><i className="fab fa-connectdevelop text-primary"></i>&nbsp;Developers</h2>

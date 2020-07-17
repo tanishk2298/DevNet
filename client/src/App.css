@@ -311,15 +311,19 @@ a:hover {
 	background-size: 200%;
 	font-size: 1.2rem;
 	color: #eee;
-	font-family: 'Poppins', sans-serif;
-	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
 	margin: 1rem 0;
 	cursor: pointer;
 	transition: .5s;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease 0s;
 }
 
 .btn:hover {
 	background-position: right;
+	background-color: #2EE59D;
+	color: #fff;
+	transform: translateY(-3px);
 }
 
 .create-profile {
@@ -334,6 +338,10 @@ a:hover {
 	margin: 15px 0;
 	color: #63686e;
 	font-size: 1.5rem;
+}
+
+.title{
+	text-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 .form-text {
@@ -369,8 +377,8 @@ form .social-input i.fa-instagram {
 	color: #3f729b;
 }
 
-form .social-input i.fa-youtube {
-	color: #c4302b;
+form .social-input i.fa-hackerrank {
+	color: #2EC866;
 }
 
 form .social-input i.fa-linkedin {
@@ -416,7 +424,7 @@ form .lead p {
 .dash-buttons .dash-edit {
 	width: 100%;
 	font-size: 0.9rem;
-	background-color: #eee;
+	background-color: #f4f4f4;
 	color: #0099FF;
 }
 
@@ -635,9 +643,26 @@ input.cmt-btn{
 	padding: 1rem;
 	background: #FDFDFD;
 	transition: transform .4s ease;
+	box-shadow: 0 3px 10px 0 rgba(0,0,0,.15);
 }
 .profile-card:hover{
 	transform: scale(1.01);
+	box-shadow: 0 6px 20px rgba(0,0,0,.3);
+}
+
+.profile-details{
+	box-shadow: 0 3px 10px 0 rgba(0,0,0,.1);
+	font-size: 1rem;
+	background: #FDFDFD;
+}
+
+.repos{
+	transition: transform .2s ease;
+	box-shadow: 0 3px 10px 0 rgba(0,0,0,.1)
+}
+.repos:hover{
+	transform: scale(1.01);
+	box-shadow: 0 3px 10px 0 rgba(0,0,0,.2);
 }
 
 .view-profile{
@@ -818,7 +843,7 @@ div.github-repos{
 	}
 	.home{
 		margin-top: 150px !important;
-		width: 122% !important;
+		width: 120% !important;
 		margin-left: -10% !important;
 		margin-right: -10% !important;
 	}
@@ -852,6 +877,8 @@ div.github-repos{
 	}
 
 	.login-content {
+		margin-top: 20%;
+		margin-left: -8%;
 		justify-content: center;
 	}
 
@@ -896,7 +923,9 @@ div.github-repos{
 	.profiles{
 		margin-top: 20% !important;
 		margin-left: 4% !important;
+		width: 90% !important;
 	}
+
 }
 
 @media screen and (max-width: 576px) {

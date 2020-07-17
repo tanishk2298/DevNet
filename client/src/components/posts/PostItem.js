@@ -9,7 +9,7 @@ const PostItem = ({addLike, removeLike,deletePost, auth, post:{_id,text,name,ava
     
 
   return (
-        <div class="post bg-white rounded">
+        <div class="post bg-white rounded profile-details ">
             <div>
               <Link to={`/profile/${user}`} class="profile-name">
                 <img

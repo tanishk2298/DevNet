@@ -110,6 +110,18 @@ const EditProfile = ({profile: {profile, loading}, createProfile , getCurrentPro
                 <textarea className="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="A short bio of yourself..." name='bio' value={bio} onChange={e => onChange(e)}></textarea>
             </div>
             <div className="form-group social-input">
+                <i className="fab fa-hackerrank fa-2x"></i>
+                <input type="text" className="form-control" placeholder="Hackerrank URL" name="youtube" value={youtube} onChange={e => onChange(e)}/>
+            </div>
+            <div className="form-group social-input">
+                <i className="fab fa-linkedin fa-2x"></i>
+                <input type="text" className="form-control" placeholder="Linkedin URL" name="linkedin" value={linkedin} onChange={e => onChange(e)}/>
+            </div>
+            <div className="form-group social-input">
+                <i className="fab fa-instagram fa-2x"></i>
+                <input type="text" className="form-control" placeholder="Instagram URL" name="instagram" value={instagram} onChange={e => onChange(e)}/>
+            </div>
+            <div className="form-group social-input">
                 <i className="fab fa-twitter fa-2x"></i>
                 <input type="text" className="form-control soc" placeholder="Twitter URL" name="twitter" value={twitter} onChange={e => onChange(e)}/>
             </div>
@@ -117,21 +129,6 @@ const EditProfile = ({profile: {profile, loading}, createProfile , getCurrentPro
             <div className="form-group social-input">
                 <i className="fab fa-facebook fa-2x"></i>
                 <input type="text" className="form-control" placeholder="Facebook URL" name="facebook" value={facebook} onChange={e => onChange(e)}/>
-            </div>
-      
-            <div className="form-group social-input">
-                <i className="fab fa-youtube fa-2x"></i>
-                <input type="text" className="form-control" placeholder="YouTube URL" name="youtube" value={youtube} onChange={e => onChange(e)}/>
-            </div>
-      
-            <div className="form-group social-input">
-                <i className="fab fa-linkedin fa-2x"></i>
-                <input type="text" className="form-control" placeholder="Linkedin URL" name="linkedin" value={linkedin} onChange={e => onChange(e)}/>
-            </div>
-      
-            <div className="form-group social-input">
-                <i className="fab fa-instagram fa-2x"></i>
-                <input type="text" className="form-control" placeholder="Instagram URL" name="instagram" value={instagram} onChange={e => onChange(e)}/>
             </div>
             <div className="row dash-buttons">
                 <div className="col-sm-3">

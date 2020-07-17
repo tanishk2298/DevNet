@@ -16,7 +16,7 @@ const CommentForm = ({addComment, postId}) => {
                 <div class="form-group">
                     <div class="row">
                         <div class="col-sm-10">
-                        <textarea class="form-control form-control-lg font-weight-light"
+                        <textarea class="form-control form-control-lg font-weight-light profile-details"
                         placeholder="Leave a comment" name="text" rows="1"
                         cols="30" value={text} onChange={e=>setText(e.target.value)}></textarea>
                         </div>

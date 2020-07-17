@@ -8,7 +8,7 @@ import {deleteComment} from '../../actions/post'
 const CommentItem = ({postId, comment:{_id, name, text, avatar, user, date},auth,deleteComment}) => {
     return (
         <Fragment>
-        <div class="post bg-white rounded">
+        <div class="post bg-white rounded profile-details">
             <div>
                 <Link to={`/profile/${user}`} class="profile-name">
                     <img
