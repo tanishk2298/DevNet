@@ -13,12 +13,12 @@ const Post = ({getPosts, post: {posts, loading}}) => {
     }, [getPosts])
     
     return loading ? <Spinner/> : (
-        <div class="container">
-            <div class="row dash posts-dash home">
-                <div class="col-md-12">
-                    <div class="col-md-12">
+        <div className="container">
+            <div className="row dash posts-dash home">
+                <div className="col-md-12">
+                    <div className="col-md-12">
                         <PostForm/>
-                        <div class="posts">
+                        <div className="posts">
                             {posts.map(post => (
                                 <PostItem key={post._id} post={post}/>
                             ))}

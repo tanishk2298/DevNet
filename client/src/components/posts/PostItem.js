@@ -9,40 +9,40 @@ const PostItem = ({addLike, removeLike,deletePost, auth, post:{_id,text,name,ava
     
 
   return (
-        <div class="post bg-white rounded profile-details ">
+        <div className="post bg-white rounded profile-details ">
             <div>
-              <Link to={`/profile/${user}`} class="profile-name">
+              <Link to={`/profile/${user}`} className="profile-name">
                 <img
-                  class="round-img profile-img"
+                  className="round-img profile-img"
                   src={avatar}
                   alt="avatar"
                 />
-                <p class="mt-1 text-primary">{name}</p>
+                <p className="mt-1 text-primary">{name}</p>
               </Link>
              </div>
              <div>
-              <p class="my-1">
+              <p className="my-1">
                   {text}
               </p>
               <Fragment>
-                <p class="post-date mt-5">
+                <p className="post-date mt-5">
                   Posted on <Moment format="DD/MM/YYYY">{date}</Moment>
                 </p>
                 {showActions && (
                   <Fragment>
-                    <button onClick={e => addLike(_id)} type="button" class="lk-btn">
-                        <i class="fas fa-arrow-up"></i>
+                    <button onClick={e => addLike(_id)} type="button" className="lk-btn">
+                        <i className="fas fa-arrow-up"></i>
                         <span>{' '}{likes.length}</span>
                     </button>
-                    <button  onClick={e => removeLike(_id)} type="button" class="lk-btn">
-                        <i class="fas fa-arrow-down"></i>
+                    <button  onClick={e => removeLike(_id)} type="button" className="lk-btn">
+                        <i className="fas fa-arrow-down"></i>
                     </button>
-                    <Link to={`/posts/${_id}`} class="lk-btn profile-name">
-                        <i class="far fa-comment"></i><span class='comment-count'>{comments.length > 0 && comments.length}</span>
+                    <Link to={`/posts/${_id}`} className="lk-btn profile-name">
+                        <i className="far fa-comment"></i><span className='comment-count'>{comments.length > 0 && comments.length}</span>
                     </Link>
                     {! auth.loading && user === auth.user._id && (
-                      <button onClick={e => deletePost(_id)} type="button" class="del lk-btn">
-                          <i class="fas fa-trash"></i>
+                      <button onClick={e => deletePost(_id)} type="button" className="del lk-btn">
+                          <i className="fas fa-trash"></i>
                       </button>
                     )}
                   </Fragment>)}

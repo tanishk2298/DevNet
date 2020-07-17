@@ -17,19 +17,19 @@ const Post = ({getPost, post: {post, loading}, match}) => {
     return (
         loading || post === null ? <Spinner/> :
         <Fragment>
-            <div class="container">
-                <div class="row dash posts-dash home">
-                    <div class="col-md-12">
-                        <div class="col-md-12">
-                            <div class="dash-buttons">
-                                <div class="row">
-                                    <div class="col-sm-3"><Link to="/posts">
-                                        <button class="btn btn-default dash-edit go-back back-post" type="submit"><i class="fas fa-chevron-left"></i>&nbsp;Home</button>
+            <div className="container">
+                <div className="row dash posts-dash home">
+                    <div className="col-md-12">
+                        <div className="col-md-12">
+                            <div className="dash-buttons">
+                                <div className="row">
+                                    <div className="col-sm-3"><Link to="/posts">
+                                        <button className="btn btn-default dash-edit go-back back-post" type="submit"><i className="fas fa-chevron-left"></i>&nbsp;Home</button>
                                         </Link>
                                     </div>
                                 </div>
                             </div>  
-                            <div class="posts">
+                            <div className="posts">
                                 <PostItem post={post} showActions={false}/>
                                 <CommentForm postId={post._id}/>
                                 

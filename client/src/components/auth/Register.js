@@ -48,7 +48,7 @@ const Register = ({setAlert, register, isAuthenticated}) => {
                         {/* <p className="text-muted title mr-4"><i className="fab fa-connectdevelop"></i>&nbsp;Connect with developers across globe</p> */}
                         <div className="input-div one">
                             <div className="i">
-                                <i class="fas fa-user"></i>
+                                <i className="fas fa-user"></i>
                             </div>
                             <div className="div">
                                     <input type="name" className="input" placeholder="Name" name="name" value={name} onChange={e => onChange(e)} />

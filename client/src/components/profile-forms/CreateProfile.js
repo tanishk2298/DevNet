@@ -47,7 +47,7 @@ const CreateProfile = ({createProfile , history}) => {
     <div className="container mt-2">
         <form className="profile" onSubmit= {e => onSubmit(e)}>
             <h2 className="create-profile">
-            <i class="fas fa-user-circle text-primary"></i>&nbsp;Create Profile
+            <i className="fas fa-user-circle text-primary"></i>&nbsp;Create Profile
               </h2>
               <small className="form-text">* = required</small>
             <div className="form-row">

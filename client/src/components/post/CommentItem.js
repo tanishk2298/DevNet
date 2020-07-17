@@ -8,30 +8,30 @@ import {deleteComment} from '../../actions/post'
 const CommentItem = ({postId, comment:{_id, name, text, avatar, user, date},auth,deleteComment}) => {
     return (
         <Fragment>
-        <div class="post bg-white rounded profile-details">
+        <div className="post bg-white rounded profile-details">
             <div>
-                <Link to={`/profile/${user}`} class="profile-name">
+                <Link to={`/profile/${user}`} className="profile-name">
                     <img
-                        class="round-img profile-img"
+                        className="round-img profile-img"
                         src={avatar}
                         alt="avatar"
                     />
-                    <p class="mt-2">{name}</p>
+                    <p className="mt-2">{name}</p>
                 </Link>
              </div>
              <div>
-                <p class="my-1">
+                <p className="my-1">
                     {text}
                 </p>
-                <p class="post-date">
+                <p className="post-date">
                     Posted on <Moment format='DD/MM/YYYY'>{date}</Moment>
                 </p>
                 {!auth.loading && user === auth.user._id && (
-                    <div class="row">
-                    <div class="col-sm-11"></div>
-                        <div class="col-sm-1">
-                            <button onClick={e => deleteComment(postId, _id)} type="button" class="del">
-                                    <i class="fas fa-trash"></i>
+                    <div className="row">
+                    <div className="col-sm-11"></div>
+                        <div className="col-sm-1">
+                            <button onClick={e => deleteComment(postId, _id)} type="button" className="del">
+                                    <i className="fas fa-trash"></i>
                             </button>
                         </div>
                         </div>
