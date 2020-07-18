@@ -1,6 +1,0 @@
-{
-    "mongoURL" : "mongodb+srv://testuser:testuser123@devnet-cvimb.mongodb.net/devnet?retryWrites=true&w=majority",
-    "jwtsecret" : "mydevnetsecrettoken",
-    "githubClientId" : "c4f263c1327f8ef57a53",
-    "githubToken" : "2b416428e104ca923f64e08c6c19507d106e6017"
-}
