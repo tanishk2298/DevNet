@@ -45,7 +45,6 @@ const Register = ({setAlert, register, isAuthenticated}) => {
                 <div className="login-content">
                     <form onSubmit={e => onSubmit(e)}>
                         <h2 className="login-content title">Sign Up</h2>
-                        {/* <p className="text-muted title mr-4"><i className="fab fa-connectdevelop"></i>&nbsp;Connect with developers across globe</p> */}
                         <div className="input-div one">
                             <div className="i">
                                 <i className="fas fa-user"></i>
