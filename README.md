@@ -1,6 +1,7 @@
 # DevNet 🌎
 
 > Social network for Developers
+
 This is a MERN stack application, a social network website for developers, where developers can create their profiles and share their ideas.
 
 ### Features 🔐:
